@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JunitXml.TestLogger" Version="3.0.87" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="CsvHelper" Version="27.0.1" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="5.0.0" />
+    <PackageReference Include="SpecFlow" Version="3.7.38" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.7.38" />
+    <PackageReference Include="XunitXml.TestLogger" Version="3.0.66" />
+    <PackageReference Include="NUnit" Version="3.13.1" />
+    <PackageReference Include="NUnit.ConsoleRunner" Version="3.12.0" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.7.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Test\DataProviders\" />
+    <Folder Include="Test\Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Test\Data\ContactData.csv" />
+    <None Remove="Specflow_Tests\obj\Specflow_Tests.csproj.nuget.g.targets" />
+    <None Remove="Specflow_Tests\obj\Specflow_Tests.csproj.nuget.cache" />
+    <None Remove="Specflow_Tests\obj\project.assets.json" />
+    <None Remove="Specflow_Tests\obj\Specflow_Tests.csproj.nuget.dgspec.json" />
+    <None Remove="Specflow_Tests\obj\Specflow_Tests.csproj.nuget.g.props" />
+    <None Remove="Specflow_Tests\obj\Debug\netcoreapp3.0\Specflow_Tests.assets.cache" />
+    <None Remove="Specflow_Tests\obj\Debug\netcoreapp3.0\Specflow_Tests.csprojAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Test\Data\ContactData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

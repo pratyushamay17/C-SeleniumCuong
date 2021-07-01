@@ -1,0 +1,38 @@
+client:
+    name: Planit
+    industry: Technology
+
+project:
+  name: JupiterToys reference implementation c#
+  
+test:
+  manual-effort-minutes: 524
+  automation-maintanance-minutes: 45
+  automated: true
+  automation-priority: 1
+  type:
+    - end to end
+    - sit
+  language:
+    - C#
+  framework:
+    - xunit
+    - selenium
+  cicd: true
+  os: ubuntu
+  docker: true
+  technology:
+    - webui
+
+application:
+  name: JupiterToys
+  technology:
+    - AngularJS
+  language:
+    - JavaScript
+  location:
+    coordinates: -37.814, 144.96332
+    city: Melbourne
+    state: Victoria
+    country: Australia
+  methodology: agile

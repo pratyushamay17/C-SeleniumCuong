@@ -1,0 +1,7 @@
+{
+    "dotnetCoreExplorer.runEnvVars": {
+        "SELENIUM_URL": "http://jupiter.cloud.planittesting.com",
+		"SELENIUM_BROWSER": "firefox",
+		"SELENIUM_WAIT": "1",
+    }
+}
